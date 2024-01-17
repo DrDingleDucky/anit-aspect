@@ -6,11 +6,13 @@ public final class AntiAspect extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("Hello from Anti-Aspect");
+        getLogger().info("Hello From AntiAspect!");
+        EnchantEventHandler enchantEventHandler = new EnchantEventHandler(this);
+        getServer().getPluginManager().registerEvents(enchantEventHandler, this);
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("Bye from Anti-Aspect");
+        getLogger().info("Bye From AntiAspect!");
     }
 }
