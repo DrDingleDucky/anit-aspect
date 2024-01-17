@@ -6,12 +6,11 @@ public final class AntiAspect extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
+        getLogger().info("Hello from Anti-Aspect");
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        getLogger().info("Bye from Anti-Aspect");
     }
 }
